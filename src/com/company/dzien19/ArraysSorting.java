@@ -12,7 +12,7 @@ public class ArraysSorting {
         System.out.println("BS 1: " + Arrays.binarySearch(array, 54));
 
 
-       /* System.out.println(array.length);
+         /* System.out.println(array.length);
 
         System.out.println("Before sorting");
 
