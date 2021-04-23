@@ -1,9 +1,20 @@
 package com.company.dzien5;
 
+
+
+//import com.company.dzien5.animal.*;
+
+import com.company.dzien5.animal.Dog;
+import com.company.dzien5.animal.Spider;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("hello");
+        Spider.getNumberOfLegs();
+        Dog.getNumberOfLegs();
+
+        String hello = "Hello World";
+        System.out.println(hello);
 
 
         //hello
