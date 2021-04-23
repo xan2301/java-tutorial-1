@@ -1,7 +1,6 @@
 package com.company.dzien5;
 
 
-
 //import com.company.dzien5.animal.*;
 
 import com.company.dzien5.animal.Dog;

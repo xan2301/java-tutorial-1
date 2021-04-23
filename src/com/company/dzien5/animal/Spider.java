@@ -4,4 +4,5 @@ public class Spider {
 
     public static void getNumberOfLegs() {
 
-    }}
+    }
+}
