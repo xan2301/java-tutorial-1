@@ -15,6 +15,13 @@ public class Main {
 
         System.out.println("Cat 1 " + cat1.getName());
         System.out.println("Cat 2 " + cat2.getName());
+
+        cat1.setName("kiciek");
+        cat2.setName("kradnie mleko z piwnicy");
+
+        System.out.println("Cat 1 " + cat1.getName());
+        System.out.println("Cat 2 " + cat2.getName());
+
     }
 
 }
