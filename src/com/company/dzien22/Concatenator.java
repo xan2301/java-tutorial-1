@@ -1,6 +1,6 @@
 package com.company.dzien22;
 
-public class Class {
+public class Concatenator {
     //    modifier
     //    class keyword
     //    class name
@@ -18,11 +18,29 @@ public class Class {
     //  modifier, returnType, name, arguments, brackets, body
 
 
-    public void  concatenate(String argument1, String argument2) {
-        if (argument1.equals("stopHere")){
-        return;
-    }
+    public String  concatenate(String argument1, String argument2) {
+
+
         System.out.println(argument1 + argument2);
+        return argument1 + argument2;
+    }
+
+
+    public static void main(String[] args) {
+        Concatenator example1 = new Concatenator();
+        Concatenator example2 = new Concatenator();
+        Concatenator example3 = new Concatenator();
+        Concatenator example4 = example3;
+
+        String var1 = "arg1";
+        String var2 = "arg2";
+
+        System.out.println(example1 == example2);
+        System.out.println(example3 == example4);
+
+
+    }
+
     //  calling a method
     //  method can be of type void
 
@@ -32,4 +50,4 @@ public class Class {
 
     //  what is object oriented?
 
-}}
+}
