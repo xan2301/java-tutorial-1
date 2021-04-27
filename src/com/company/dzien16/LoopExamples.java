@@ -4,15 +4,32 @@ public class LoopExamples {
 
     public static void main(String[] args) {
         LoopExamples loopExamples = new LoopExamples();
-        loopExamples.doWhileLoopExample2();
+        loopExamples.whileLoopExample11();
     }
 
     private void whileLoopExample1() {
         int i = 0;
         while (i < 10) {
+
             System.out.println("i = " + i);
             i++;
         }
+    }
+
+        private void whileLoopExample11() {
+            int i = 0;
+            while (i < 10) {
+            if (i == 5) {
+                break;
+    //          jest tez slowo kluczowe continue;
+            }
+
+                System.out.println("i = " + i);
+                i++;
+            }
+
+
+
 
     }
 
