@@ -51,10 +51,11 @@ public class ArrayExamples {
             if (array[i] > maximum) {
                 maximum = array[i];
             }
-            System.out.println("Maximum: " + maximum);
         }
-
-
+        System.out.println("Maximum: " + maximum);
     }
 
+
 }
+
+
