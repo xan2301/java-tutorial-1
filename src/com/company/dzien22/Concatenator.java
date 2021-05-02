@@ -37,6 +37,7 @@ public class Concatenator {
 
         System.out.println(example1 == example2);
         System.out.println(example3 == example4);
+        System.out.println();
 
 
     }
