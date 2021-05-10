@@ -8,7 +8,15 @@ public class Car {
 
     private int productionYear;
 
-    public Car ( String company, String model, int productionYear){
+//    public Car ( String company, String model, int productionYear){
+//
+//        company = company;
+//        model = model;
+//        productionYear = productionYear;
+//
+//    }
+
+    public void assemble ( String company, String model, int productionYear){
 
         company = company;
         model = model;
