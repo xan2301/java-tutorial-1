@@ -18,13 +18,13 @@ public class Car {
 
     public void assemble ( String company, String model, int productionYear){
 
-        company = company;
-        model = model;
-        productionYear = productionYear;
+        this.company = company;
+        this.model = model;
+        this.productionYear = productionYear;
 
     }
 
-//   this - differ metgod local args from class fields
+//   this - differ method local args from class fields
 
 
 
