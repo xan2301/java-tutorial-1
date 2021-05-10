@@ -49,4 +49,16 @@ public class Car {
         result = 31 * result + (model != null ? model.hashCode() : 0);
         return result;
     }
+
+
+    // ps + toString
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "company='" + company + '\'' +
+                ", model='" + model + '\'' +
+                ", productionYear=" + productionYear +
+                '}';
+    }
 }

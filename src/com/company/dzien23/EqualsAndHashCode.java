@@ -44,7 +44,7 @@ public class EqualsAndHashCode {
     private static void equalsExample() {
         Car car1 = new Car("Mercedes", "A-Class", 2010);
         Car car2 = new Car("BMW", "X1", 2009);
-        Car car3 = new Car("Mercedes", "Golf", 2015);
+        Car car3 = new Car("Volkswagen", "Golf", 2015);
         Car car4 = new Car("Audi", "A4", 2018);
         Car car5 = new Car("Audi", "A4", 2018);
 
