@@ -1,7 +1,9 @@
 package com.company.dzien30.interfaceExamples;
 
 
-    public class Cat implements CatStrokeable, Voiceable {
+import java.io.Serializable;
+
+public class Cat implements CatStrokeable, Voiceable {
         @Override
         public void doSomethingStrokeableCat() {
             System.out.println("I liked being stroked!!!");

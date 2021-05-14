@@ -4,8 +4,14 @@ public interface Voiceable {
 
     String gimmeVoice();
 
-    void sing(String songName);
+   default void sing(String songName){
+       singMeASongWithName(songName);
 
+   }
+
+    private void singMeASongWithName(String songName) {
+        System.out.println( "Default singing song method: "+ songName);
+    }
 
 
 }
