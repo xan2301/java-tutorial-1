@@ -1,0 +1,25 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(®§§Îşÿÿÿÿ
+S
+java:S1854$"8Remove this useless assignment to local variable "var2".(ÜóÍéûÿÿÿÿ
+S
+java:S1854#"8Remove this useless assignment to local variable "var1".(«¹œÿÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(¸¸‚ûÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(¿©¥ë
+J
+java:S6212 "/Declare this local variable with "var" instead.(ç‹Ü±ùÿÿÿÿ
+J
+java:S6212#"/Declare this local variable with "var" instead.(«¹œÿÿÿÿÿ
+J
+java:S6212$"/Declare this local variable with "var" instead.(ÜóÍéûÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(ù¼©çüÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(¡³¶ûÿÿÿÿ
+D
+java:S1481#")Remove this unused "var1" local variable.(«¹œÿÿÿÿÿ
+D
+java:S1481$")Remove this unused "var2" local variable.(ÜóÍéûÿÿÿÿ
+?
+java:S1068
+")Remove this unused "color" private field.(È„…¦

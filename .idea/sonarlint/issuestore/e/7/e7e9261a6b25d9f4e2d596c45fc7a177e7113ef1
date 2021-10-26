@@ -1,0 +1,8 @@
+
+4
+java:S1065"Remove this unused label.(¿¦ìªøÿÿÿÿ
+V
+java:S1119";Refactor the code to remove this label and the need for it.(¿¦ìªøÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(¿¦ìªøÿÿÿÿ
+C	java:S108")Either remove or fill this block of code.(¿¦ìªøÿÿÿÿ

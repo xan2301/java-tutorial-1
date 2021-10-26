@@ -1,0 +1,35 @@
+
+E
+java:S6212"/Declare this local variable with "var" instead.(Ä‹ûÊ
+J
+java:S6212"/Declare this local variable with "var" instead.(ùó›Ìøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ğö¶üÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(ùó›Ìøÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ôñ¨
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ğö¶üÿÿÿÿ
+J
+java:S6212%"/Declare this local variable with "var" instead.(ùó›Ìøÿÿÿÿ
+E
+java:S6212&"/Declare this local variable with "var" instead.(èê»
+S	java:S106("9Replace this use of System.out or System.err by a logger.(µ‘åãûÿÿÿÿ
+J
+java:S62120"/Declare this local variable with "var" instead.(ùó›Ìøÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(Ğö¶üÿÿÿÿ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(åÓ¦©
+J
+java:S6212<"/Declare this local variable with "var" instead.(¨Û•¨üÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(Ğö¶üÿÿÿÿ
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(¨ƒòæÿÿÿÿÿ
+E
+java:S6212E"/Declare this local variable with "var" instead.(èê»
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(°Áƒ‹ûÿÿÿÿ
+Q
+java:S1144
+"6Remove this unused private "whileLoopExample1" method.(•ÛùÕüÿÿÿÿ
+Q
+java:S1144$"6Remove this unused private "whileLoopExample2" method.(­§÷îıÿÿÿÿ
+S
+java:S1144/"8Remove this unused private "doWhileLoopExample1" method.(Ëíşÿÿÿÿÿ
+S
+java:S11449"8Remove this unused private "doWhileLoopExample2" method.(èíªÆøÿÿÿÿ

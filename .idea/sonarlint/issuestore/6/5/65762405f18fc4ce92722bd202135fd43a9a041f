@@ -1,0 +1,20 @@
+
+E
+java:S6212"/Declare this local variable with "var" instead.(õ½ù
+V	java:S125"<This block of commented-out lines of code should be removed.(½Ú–ÿøÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(Å‚ÉÎúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ğö¶üÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(êÜÈ•
+E
+java:S6212"/Declare this local variable with "var" instead.(èê»
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(°Áƒ‹ûÿÿÿÿ
+E
+java:S6212'"/Declare this local variable with "var" instead.(¢³¯¯
+B
+java:S1264(",Replace this "for" loop with a "while" loop.(îª£
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(„ò¹Şüÿÿÿÿ
+J
+java:S1144"4Remove this unused private "forLoopExample1" method.(ªÙ¬é
+O
+java:S1144"4Remove this unused private "forLoopExample2" method.(”ÏÉ‚ùÿÿÿÿ

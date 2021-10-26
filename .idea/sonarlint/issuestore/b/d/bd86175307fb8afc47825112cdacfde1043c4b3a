@@ -1,0 +1,17 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(×«Ë–ûÿÿÿÿ
+E
+java:S6212	"/Declare this local variable with "var" instead.(Èéâì
+S	java:S106"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+S	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¢¸§¹
+V	java:S125 "<This block of commented-out lines of code should be removed.(ûîšÁüÿÿÿÿ
+A
+java:S1144"+Remove this unused private "method" method.(Î›ËÓ
+B
+java:S1144",Remove this unused private "method2" method.(‘‹»Ù
+B
+java:S1144",Remove this unused private "method3" method.(êˆ‹Ù

@@ -1,0 +1,12 @@
+
+_
+java:S1192"IDefine a constant instead of duplicating this literal "switch: " 4 times.(¿çªã
+J
+java:S6212"/Declare this local variable with "var" instead.(èþð¦øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¿çªã
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(–¿¨™
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(Í‹ðê
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‰àð…
+V	java:S125"<This block of commented-out lines of code should be removed.(Ù—Ö¿üÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(’ä¯»ùÿÿÿÿ
