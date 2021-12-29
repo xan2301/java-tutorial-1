@@ -18,6 +18,10 @@ public class Main {
 
         //hello
 
+        // aktualnie
+
+        // #2 Podsumowanie wykładu 'JDK, JRE, JVM, wersje i providerzy'
+
 
     }
 }
