@@ -18,7 +18,7 @@ public class Main {
 
 
         // aktualnie
-        // #3 Podsumowanie wykładu 'Instalacja i konfiguracja Javy oraz IntelliJ IDEA'
+        // #4 Podsumowanie wykładu 'Omawiamy IDE'
 
 
     }
