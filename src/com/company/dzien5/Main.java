@@ -16,11 +16,9 @@ public class Main {
         System.out.println(hello);
 
 
-        //hello
 
         // aktualnie
-
-        // #2 Podsumowanie wykładu 'JDK, JRE, JVM, wersje i providerzy'
+        // #3 Podsumowanie wykładu 'Instalacja i konfiguracja Javy oraz IntelliJ IDEA'
 
 
     }
