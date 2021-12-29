@@ -16,9 +16,8 @@ public class Main {
         System.out.println(hello);
 
 
-
         // aktualnie
-        // #4 Podsumowanie wykładu 'Omawiamy IDE'
+        // #5 Podsumowanie wykładu 'Metoda main, słowa zastrzeżone, komentarze'
 
 
     }
