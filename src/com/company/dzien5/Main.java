@@ -6,6 +6,7 @@ package com.company.dzien5;
 import com.company.dzien5.animal.Dog;
 import com.company.dzien5.animal.Spider;
 
+
 public class Main {
 
     public static void main(String[] args) {
