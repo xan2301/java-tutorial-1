@@ -18,7 +18,7 @@ public class Main {
 
 
         // aktualnie
-        // #5 Podsumowanie wykładu 'Metoda main, słowa zastrzeżone, komentarze'
+        //#9 Podsumowanie wykładu 'Kontynuujemy zagadnienie zmiennych...'
 
 
     }
