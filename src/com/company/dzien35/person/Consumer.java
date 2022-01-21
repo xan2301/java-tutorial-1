@@ -9,6 +9,7 @@ public class Consumer extends Person {
 
     @Override
     public void consume(Food food) {
+        System.out.println("Consumer consuming:" + food);
 
     }
 }

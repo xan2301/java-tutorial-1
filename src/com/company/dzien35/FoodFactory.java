@@ -46,6 +46,7 @@ public class FoodFactory {
 
                 Food food = producingPerson.produce("some food", consumingPerson);
                 foods[index]= food;
+                index++;
             }
 
         }

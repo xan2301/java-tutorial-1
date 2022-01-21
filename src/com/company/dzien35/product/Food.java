@@ -17,5 +17,12 @@ public abstract class Food {
         this.consumingMan = consumingMan;
     }
 
-
+    @Override
+    public String toString() {
+        return "Food{" +
+                "name='" + name + '\'' +
+                ", producingMan=" + producingMan +
+                ", consumingMan=" + consumingMan +
+                '}';
+    }
 }
