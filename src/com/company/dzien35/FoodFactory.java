@@ -21,8 +21,8 @@ public class FoodFactory {
 
         ConsumingMan[] consumingPeople = new ConsumingMan[]{
 
-                new Consumer("Rafał", "Pożeracz"),
-                new Consumer("Angelika", "Zajadacz")
+                new Consumer("Rafał", "Pożeracz", "chocolate"),
+                new Consumer("Angelika", "Zajadacz", "fish"),
 
         };
 
@@ -44,7 +44,7 @@ public class FoodFactory {
             for (ConsumingMan consumingPerson : consumingPeople) {
 
 
-                Food food = producingPerson.produce("some food", consumingPerson);
+                Food food = producingPerson.produce(consumingPerson.getExpectations(), consumingPerson);
                 foods[index]= food;
                 index++;
             }

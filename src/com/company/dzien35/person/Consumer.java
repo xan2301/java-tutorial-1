@@ -3,8 +3,17 @@ package com.company.dzien35.person;
 import com.company.dzien35.product.Food;
 
 public class Consumer extends Person {
-    public Consumer(String name, String surname) {
+
+    private final String expectations;
+
+
+    public Consumer(String name, String surname, String expectations) {
         super(name, surname);
+        this.expectations = expectations;
+    }
+
+    public String getExpectations() {
+        return expectations;
     }
 
     @Override

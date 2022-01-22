@@ -12,6 +12,11 @@ public class Producer extends Person implements ProducingMan {
     }
 
     @Override
+    public String getExpectations() {
+        return "no expectations";
+    }
+
+    @Override
     public void consume(Food food) {
         System.out.println("Producent consuming food:" + food);
 
