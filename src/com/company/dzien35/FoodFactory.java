@@ -45,7 +45,7 @@ public class FoodFactory {
 
 
                 Food food = producingPerson.produce(consumingPerson.getExpectations(), consumingPerson);
-                foods[index]= food;
+                foods[index] = food;
                 index++;
             }
 
@@ -55,12 +55,12 @@ public class FoodFactory {
         System.out.println("Printing Food");
         for (Food food : foods) {
             System.out.println(food);
-            
-        }
-        }
 
-
+        }
     }
+
+
+}
 
 
 

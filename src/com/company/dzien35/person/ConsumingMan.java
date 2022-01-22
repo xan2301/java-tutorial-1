@@ -6,5 +6,5 @@ public interface ConsumingMan {
 
     void consume(Food food);
 
-    String  getExpectations();
+    String getExpectations();
 }
