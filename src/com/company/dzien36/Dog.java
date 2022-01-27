@@ -12,7 +12,7 @@ public class Dog {
     public Dog(String name) {
 
         System.out.println("Calling constructor 1");
-        this.name = name
+        this.name = name;
 
 
     }
