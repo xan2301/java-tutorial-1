@@ -1,4 +1,4 @@
-package com.company.dzien37;
+package com.company.dzien37.zoo;
 
 public class Mammal extends Animal {
 
