@@ -1,4 +1,7 @@
 package com.company.dzien38;
 
-public interface CatStrokeable {
+public interface CatStrokeable extends Strokeable{
+
+    void doSomethingAsStrokeableCat();
+
 }
