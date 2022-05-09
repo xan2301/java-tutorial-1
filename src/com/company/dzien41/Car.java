@@ -10,7 +10,25 @@ public class Car {
 
     private SteeringWheel steeringWheel;
 
-    String numberOfCarsCreated;
+    static long staticNumberOfCarsCreated;
+
+   long numberOfCarsCreated;
+
+
+    public Car() {
+        this.company = "BMW";
+        this.model = "X5";
+        this.productionYear = 2020;
+        this.steeringWheel = new SteeringWheel(0.35);
+        horn();
+        numberOfCarsCreated++;
+        staticNumberOfCarsCreated++;
+
+
+
+
+
+    }
 
 
     public String getCompany() {
@@ -29,18 +47,7 @@ public class Car {
         return steeringWheel;
     }
 
-    public Car() {
-        this.company = "BMW";
-        this.model = "X5";
-        this.productionYear = 2020;
-        this.steeringWheel = new SteeringWheel(0.35);
-        horn();
 
-
-
-
-
-    }
 
     public void horn() {
         int i = 5;
