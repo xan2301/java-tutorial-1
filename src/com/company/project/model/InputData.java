@@ -13,6 +13,12 @@ public class InputData {
 
     private BigDecimal monthsDuration = BigDecimal.valueOf(180);
 
+    private RateType rateType = RateType.CONSTANT;
+
+    private BigDecimal bankMargin = new BigDecimal("1.9")
+
+
+
 
 
 
