@@ -1,0 +1,19 @@
+package com.company.project.model;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public class InputData {
+
+    private LocalDate repaymentStartDate = LocalDate.of(2020, 1, 6);
+
+    private BigDecimal wiborPercent = new BigDecimal("1.73");
+
+    private BigDecimal amount = new BigDecimal("300000");
+
+    private BigDecimal monthsDuration = BigDecimal.valueOf(180);
+
+
+
+
+}
