@@ -11,7 +11,7 @@ public interface PrintingService {
     String DATA = "DATA: ";
     String MONTHS = " MIESIECY ";
     String RATE = "RATA: ";
-    String INTEREST = "ODSETKI: ";
+    String INTEREST = "OPROCENTOEANIE: ";
     String CAPITAL = "KAPITAL: ";
     String LEFT = "POZOSTALO: ";
     String MORTGAGE_AMOUNT = "KWOTA KREDYTU: ";

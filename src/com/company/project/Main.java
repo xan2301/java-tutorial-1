@@ -1,6 +1,8 @@
 package com.company.project;
 
 import com.company.project.model.InputData;
+import com.company.project.service.MortgageCalculationService;
+import com.company.project.service.MortgageCalculationServiceImpl;
 import com.company.project.service.PrintingService;
 import com.company.project.service.PrintingServiceImpl;
 
@@ -12,9 +14,12 @@ public class Main {
                 .withAmount(new BigDecimal("298000"))
                 .withMonthsDuration(BigDecimal.valueOf(160));
 
-
         PrintingService printingService = new PrintingServiceImpl();
-        printingService.printInputDataInfo(inputData);
+
+        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImpl(printingService);
+        mortgageCalculationService.calculate(inputData);
+
+
     }
 
 }
