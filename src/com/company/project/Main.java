@@ -1,10 +1,7 @@
 package com.company.project;
 
 import com.company.project.model.InputData;
-import com.company.project.service.MortgageCalculationService;
-import com.company.project.service.MortgageCalculationServiceImpl;
-import com.company.project.service.PrintingService;
-import com.company.project.service.PrintingServiceImpl;
+import com.company.project.service.*;
 
 import java.math.BigDecimal;
 
@@ -15,8 +12,12 @@ public class Main {
                 .withMonthsDuration(BigDecimal.valueOf(160));
 
         PrintingService printingService = new PrintingServiceImpl();
+        RateCalculationService rateCalculationService = new RateCalculationServiceImpl();
 
-        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImpl(printingService);
+        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImpl(
+                printingService,
+                rateCalculationService
+        );
         mortgageCalculationService.calculate(inputData);
 
 
