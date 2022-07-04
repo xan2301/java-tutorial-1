@@ -14,7 +14,7 @@ public class TimePointServiceImpl implements TimePointService {
 
 
     @Override
-    public TimePoint calculate(BigDecimal rateNumber, InputData inputData){
+    public TimePoint calculate(BigDecimal rateNumber, InputData inputData) {
         LocalDate date = calculateDate(rateNumber, inputData);
         BigDecimal year = calculateYear(rateNumber);
         BigDecimal month = calculateMonth(rateNumber);
@@ -29,14 +29,15 @@ public class TimePointServiceImpl implements TimePointService {
                 .plus(rateNumber.subtract(BigDecimal.ONE).intValue(), ChronoUnit.MONTHS);
     }
 
-    private BigDecimal calculateYear(final BigDecimal rateNumber){
+    private BigDecimal calculateYear(final BigDecimal rateNumber) {
 
         return rateNumber.divide(YEAR, RoundingMode.UP).max(BigDecimal.ONE);
     }
 
-    private BigDecimal calculateMonth(final BigDecimal rateNumber){
+    private BigDecimal calculateMonth(final BigDecimal rateNumber) {
 
-        return rateNumber.remainder(YEAR);
+        return BigDecimal.ZERO.equals(rateNumber.remainder(YEAR)) ? YEAR : rateNumber.remainder(YEAR);
+
     }
 
 
