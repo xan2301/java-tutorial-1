@@ -1,8 +1,12 @@
 package com.company.project.service;
 
+import com.company.project.model.InputData;
 import com.company.project.model.TimePoint;
 
-public interface TimePointService {
-    TimePoint calculate();
+import java.math.BigDecimal;
 
+public interface TimePointService {
+
+
+    TimePoint calculate(BigDecimal rateNumber, InputData inputData);
 }

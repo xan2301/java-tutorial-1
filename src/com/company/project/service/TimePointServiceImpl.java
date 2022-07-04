@@ -1,11 +1,12 @@
 package com.company.project.service;
 
+import com.company.project.model.InputData;
 import com.company.project.model.TimePoint;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-
-import static com.company.project.service.PrintingService.YEAR;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class TimePointServiceImpl implements TimePointService {
 
@@ -13,14 +14,24 @@ public class TimePointServiceImpl implements TimePointService {
 
 
     @Override
-    public TimePoint calculate(){
+    public TimePoint calculate(BigDecimal rateNumber, InputData inputData){
+        LocalDate date = calculateDate(rateNumber, inputData);
+        BigDecimal year = calculateYear(rateNumber);
+        BigDecimal month = calculateMonth(rateNumber);
 
-        return new TimePoint();
+        return new TimePoint(date, year, month);
+
+
+    }
+
+    private LocalDate calculateDate(BigDecimal rateNumber, InputData inputData) {
+        return inputData.getRepaymentStartDate()
+                .plus(rateNumber.subtract(BigDecimal.ONE).intValue(), ChronoUnit.MONTHS);
     }
 
     private BigDecimal calculateYear(final BigDecimal rateNumber){
 
-        return rateNumber.divide(YEAR, RoundingMode.HALF_UP);
+        return rateNumber.divide(YEAR, RoundingMode.UP).max(BigDecimal.ONE);
     }
 
     private BigDecimal calculateMonth(final BigDecimal rateNumber){
