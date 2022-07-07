@@ -51,12 +51,15 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
 
     private RateAmounts calculateConstantRate(InputData inputData) {
 
-        BigDecimal q = calculateQ(inputData.getInterestPercent());
+        BigDecimal interestPercent = inputData.getInterestPercent();
+        BigDecimal residualAmount = inputData.getAmount();
 
+        BigDecimal q = calculateQ(interestPercent);
 
         BigDecimal rateAmount = calculateConstantRateAmount();
-        BigDecimal interestAmount = calculateInterestAmount();
+        BigDecimal interestAmount = calculateInterestAmount(residualAmount, interestPercent);
         BigDecimal capitalAmount = calculateConstantCapitalAmount();
+
 
 
         return new RateAmounts(rateAmount, interestAmount, capitalAmount);
@@ -67,12 +70,15 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
 
     private RateAmounts calculateConstantRate(InputData inputData, Rate previousRate) {
 
-        BigDecimal q = calculateQ(inputData.getInterestPercent());
+        BigDecimal interestPercent = inputData.getInterestPercent();
+        BigDecimal residualAmount = previousRate.getMortgageResidual().getAmount();
+
+        BigDecimal q = calculateQ(interestPercent);
 
 
 
         BigDecimal rateAmount = calculateConstantRateAmount();
-        BigDecimal interestAmount = calculateInterestAmount();
+        BigDecimal interestAmount = calculateInterestAmount(residualAmount, interestPercent);
         BigDecimal capitalAmount = calculateConstantCapitalAmount();
 
 
@@ -80,9 +86,6 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
     }
 
 
-    private BigDecimal calculateQ(BigDecimal interestPercent) {
-        return interestPercent.divide(YEAR, 10, RoundingMode.HALF_UP).add(BigDecimal.ONE);
-    }
 
 
     private RateAmounts calculateDecreasingRate(InputData inputData) {
@@ -96,6 +99,18 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
 
     private RateAmounts calculateDecreasingRate(InputData inputData, Rate previousRate) {
         return new RateAmounts();
+    }
+
+
+
+
+    private BigDecimal calculateInterestAmount() {
+        return null;
+    }
+
+
+    private BigDecimal calculateQ(BigDecimal interestPercent) {
+        return interestPercent.divide(YEAR, 10, RoundingMode.HALF_UP).add(BigDecimal.ONE);
     }
 
 
