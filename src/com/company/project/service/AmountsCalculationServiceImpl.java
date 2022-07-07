@@ -9,6 +9,8 @@ import java.math.RoundingMode;
 
 public class AmountsCalculationServiceImpl implements AmountsCalculationService {
 
+
+
     public static final BigDecimal YEAR = BigDecimal.valueOf(12);
 
     @Override
@@ -84,14 +86,38 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
 
     private RateAmounts calculateDecreasingRate(InputData inputData) {
 
+        BigDecimal interestPercent = inputData.getInterestPercent();
+        BigDecimal residualAmount = inputData.getAmount();
 
-        return new RateAmounts();
+
+
+
+        BigDecimal interestAmount = calculateInterestAmount(residualAmount, interestPercent);
+        BigDecimal capitalAmount = calculateDecreasingCapitalAmount(residualAmount, inputData.getMonthsDuration());
+        BigDecimal rateAmount = capitalAmount.add(interestAmount);
+
+
+        return new RateAmounts(rateAmount, interestAmount, capitalAmount);
 
 
     }
 
     private RateAmounts calculateDecreasingRate(InputData inputData, Rate previousRate) {
-        return new RateAmounts();
+
+        BigDecimal interestPercent = inputData.getInterestPercent();
+        BigDecimal residualAmount = previousRate.getMortgageResidual().getAmount();
+
+
+
+
+        BigDecimal interestAmount = calculateInterestAmount(residualAmount, interestPercent);
+        BigDecimal capitalAmount = calculateDecreasingCapitalAmount(residualAmount, inputData.getMonthsDuration());
+        BigDecimal rateAmount = capitalAmount.add(interestAmount);
+
+
+
+
+        return new RateAmounts(rateAmount, interestAmount, capitalAmount);
     }
 
     private BigDecimal calculateQ(BigDecimal interestPercent) {
@@ -118,6 +144,11 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
     private BigDecimal calculateInterestAmount(BigDecimal residualAmount, BigDecimal interestPercent) {
         return residualAmount.multiply(interestPercent).divide(YEAR, 2, RoundingMode.HALF_UP);
     }
+
+    private BigDecimal calculateDecreasingCapitalAmount(BigDecimal amount, BigDecimal monthsDuration) {
+        return amount.divide(monthsDuration, 2 , RoundingMode.HALF_UP);
+    }
+
 
 
 }
