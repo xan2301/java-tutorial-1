@@ -101,17 +101,17 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
         return new RateAmounts();
     }
 
-
-
-
-    private BigDecimal calculateInterestAmount() {
-        return null;
-    }
-
-
     private BigDecimal calculateQ(BigDecimal interestPercent) {
         return interestPercent.divide(YEAR, 10, RoundingMode.HALF_UP).add(BigDecimal.ONE);
     }
+
+
+    private BigDecimal calculateInterestAmount(BigDecimal residualAmount, BigDecimal interestPercent) {
+        return residualAmount.multiply(interestPercent).divide(YEAR, 2, RoundingMode.HALF_UP);
+    }
+
+
+
 
 
 }
