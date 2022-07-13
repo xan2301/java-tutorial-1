@@ -39,6 +39,8 @@ public class TimePointServiceImpl implements TimePointService {
         return BigDecimal.ZERO.equals(rateNumber.remainder(YEAR)) ? YEAR : rateNumber.remainder(YEAR);
 
     }
+    
+
 
 
 }
