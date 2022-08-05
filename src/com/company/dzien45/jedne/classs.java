@@ -1,22 +1,18 @@
 package com.company.dzien45.jedne;
 
-public class classs {
+public class classs <T> {
 
     public static void main(String[] args) {
-        int x = 7;
-        A(); {
-            x = 8;
-        }
-        {
-            x = 9;
-        }
 
-        System.out.println(x);
-    }
-
-    private static void A() {
     }
 
 
+    public <T> void dump (T[]table){
 
+       for (T t: table)
+
+          System.out.println(t);
+    }
 }
+
+
