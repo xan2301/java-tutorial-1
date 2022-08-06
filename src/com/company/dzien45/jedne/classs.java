@@ -12,6 +12,9 @@ public class classs <T> {
        for (T t: table)
 
           System.out.println(t);
+
+
+       //
     }
 }
 
