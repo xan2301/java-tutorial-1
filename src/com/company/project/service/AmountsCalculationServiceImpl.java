@@ -111,7 +111,7 @@ public class AmountsCalculationServiceImpl implements AmountsCalculationService 
 
 
         BigDecimal interestAmount = calculateInterestAmount(residualAmount, interestPercent);
-        BigDecimal capitalAmount = calculateDecreasingCapitalAmount(residualAmount, inputData.getMonthsDuration());
+        BigDecimal capitalAmount = calculateDecreasingCapitalAmount(inputData.getAmount(), inputData.getMonthsDuration());
         BigDecimal rateAmount = capitalAmount.add(interestAmount);
 
 
