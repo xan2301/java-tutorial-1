@@ -6,18 +6,29 @@ public class MortgageResidual {
 
     private final BigDecimal amount;
 
-    private final BigDecimal dustation;
+    private final BigDecimal duration;
+
+
+    public MortgageResidual(BigDecimal amount, BigDecimal dustation) {
+        this.amount = amount;
+        this.duration = dustation;
+
+    }
 
     public BigDecimal getAmount() {
         return amount;
     }
 
-    public BigDecimal getDustation() {
-        return dustation;
+    public BigDecimal getDuration() {
+        return duration;
     }
 
-    public MortgageResidual(BigDecimal amount, BigDecimal dustation) {
-        this.amount = amount;
-        this.dustation = dustation;
+
+    @Override
+    public String toString() {
+        return "MortgageResidual{" +
+                "amount=" + amount +
+                ", duration=" + duration +
+                '}';
     }
 }
